@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  background-color: #f4f4f4; /* Soft off-white */
+  color: #1a1a1a; /* Deep architectural gray/black */
+  cursor: none;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Corrected CSS syntax */
+.custom-cursor {
+  mix-blend-mode: difference;
+  background-color: #1a1a1a; 
+}
