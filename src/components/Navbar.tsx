@@ -32,7 +32,7 @@ export default function Navbar() {
       }`}
     >
       <div className="flex items-center gap-4">
-        <img src="/logo.png" alt="Studio Logo" className="h-10 w-auto object-contain mix-blend-multiply" />
+        <img src="/yash-portfolio/logo.png" alt="Studio Logo" className="h-10 w-auto object-contain mix-blend-multiply" />
         <span className="font-medium tracking-widest uppercase text-sm text-[#1a1a1a]">Yash Yadav</span>
       </div>
       <div className="text-sm tracking-widest uppercase text-[#1a1a1a]">

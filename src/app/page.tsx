@@ -17,7 +17,7 @@ export default function Home() {
         {/* Parallax Image Section using homepage.png */}
         <section 
           className="h-[60vh] w-full flex items-center justify-center relative bg-fixed bg-center bg-cover"
-          style={{ backgroundImage: "url('/homepage.png')" }}
+          style={{ backgroundImage: "url('/yash-portfolio/homepage.png')" }}
         >
           <div className="absolute inset-0 bg-white/60 backdrop-blur-sm z-0"></div>
           <p className="text-2xl font-light uppercase tracking-widest text-center max-w-2xl text-[#1a1a1a] z-10 px-8">
@@ -76,7 +76,7 @@ export default function Home() {
               
               {/* Download Button */}
               <a 
-                href="/resume.pdf" 
+                href="/yash-portfolio/resume.pdf" 
                 download 
                 className="group relative inline-flex items-center justify-center px-8 py-4 font-bold tracking-widest uppercase text-sm border-2 border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-[#f4f4f4] transition-all duration-300"
               >
@@ -87,14 +87,14 @@ export default function Home() {
             {/* Right Side: Interactive Preview Card */}
             <div className="w-full md:w-1/2 flex justify-center md:justify-end perspective-[1000px]">
               <a 
-                href="/resume.jpg" 
+                href="/yash-portfolio/resume.jpg" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative w-full max-w-sm aspect-[1/1.4] bg-white shadow-2xl group transition-all duration-700 hover:-translate-y-4 hover:rotate-y-6 hover:rotate-z-2"
               >
                 {/* The Preview Image */}
                 <Image 
-                  src="/resume.jpg" 
+                  src="/yash-portfolio/resume.jpg" 
                   alt="Resume Preview" 
                   fill 
                   className="object-cover border border-gray-200"
