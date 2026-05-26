@@ -89,3 +89,8 @@ export default async function ProjectDetail({ params }: { params: { id: string }
     </SmoothScroll>
   );
 }
+export function generateStaticParams() {
+  return projects.map((project) => ({
+    id: project.id.toString(),
+  }));
+}
