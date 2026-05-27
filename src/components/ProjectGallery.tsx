@@ -18,18 +18,20 @@ export default function ProjectGallery({ gallery, title }: { gallery: string[], 
         </h3>
         
         {/* Changed to 3 or 4 columns to make the images much smaller and neat */}
+        {/* Changed to 3 or 4 columns to make the images much smaller and neat */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {gallery.map((imgSrc, index) => (
             <div 
               key={index} 
               className="relative aspect-square overflow-hidden bg-gray-200 cursor-pointer group"
-              onClick={() => setSelectedImage(imgSrc)} // Opens the image on click
+              onClick={() => setSelectedImage(imgSrc)}
             >
                <Image 
                  src={imgSrc} 
                  alt={`${title} gallery image ${index + 1}`} 
                  fill 
-                 className="object-cover transition-transform duration-700 group-hover:scale-110" 
+                 className="object-cover transition-transform duration-700 group-hover:scale-110"
+                 priority={index === 0} /* <--- ADD THIS LINE RIGHT HERE */
                />
             </div>
           ))}
@@ -57,7 +59,7 @@ export default function ProjectGallery({ gallery, title }: { gallery: string[], 
               alt="Full screen view" 
               fill 
               className="object-contain" // Ensures the whole image fits without cropping
-              quality={100}
+              
             />
           </div>
         </div>

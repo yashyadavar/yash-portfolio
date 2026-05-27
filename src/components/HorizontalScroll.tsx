@@ -52,7 +52,7 @@ export default function HorizontalScroll() {
         Since you have 3 projects, it is 300vw. 
       */}
       <div ref={sliderRef} className="flex h-[80vh] w-[300vw]">
-        {projects.map((project, index) => (
+        {projects.slice(0, 3).map((project, index) => (
           <div
             key={project.id}
             className={`panel w-screen h-full flex flex-col justify-center px-10 md:px-24 ${project.color}`}
